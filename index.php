@@ -1,12 +1,16 @@
 <?php
 require_once('admin/conexao/banco.php');
-$sql = "select *, date_format(slo_data_cadastro,'%d/%m/%Y') as data_cadastro from slogan";
+$sql = "select *, date_format(slo_data_cadastro,'%d/%m/%Y') as data_cadastro from tb_slogan";
 $sql = mysqli_query($con, $sql) or die ("Erro na sql!");
-$dados = mysqli_fetch_array($sql); 
+$dados = mysqli_fetch_array($sql);
+
+// $sql2 = "select *, date_format(inf_data_cadastro,'%d/%m/%Y') as data_cadastro from tb_informacoes";
+// $sql2 = mysqli_query($con, $sql2) or die ("Erro na sql!");
+// $dados2 = mysqli_fetch_array($sql2); 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="utf-8">
@@ -86,7 +90,7 @@ $dados = mysqli_fetch_array($sql);
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Seja Bem Vindo a <span>Enquadra</span></h1>
       <h2><?php echo $dados ['slo_slogan']; ?></h2>
-      <h2>Nada do que vivemos tem sentido se não soubermos incluir outras pessoas.</h2>
+      <!-- <h2>Nada do que vivemos tem sentido se não soubermos incluir outras pessoas.</h2> -->
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Começar Tour</a>
         <a href="https://www.youtube.com/watch?v=9KIedVj9Aoc" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Assista ao Vídeo</span></a>
@@ -101,6 +105,7 @@ $dados = mysqli_fetch_array($sql);
       <div class="container" data-aos="fade-up">
 
         <div class="row">
+        
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>

@@ -28,21 +28,18 @@ body {
 	width: 100%;
 	height: 1000px;
 }
-
 #menu {
 	width: 20%;
 	height: 1000px;
-	background-color: #ba0707;
+	background-color: #D2E28B;
 	float: left;
 }
-
 #conteudo {
 	width: 80%;
 	height: 100vh;
 	float: left;	
-	background-color: #F4F4F4;
-}
-
+	background-color: #eefabb;
+} 
 .titulo {
 	width: 96%;
 	height: 21px;
@@ -50,8 +47,9 @@ body {
 	border: 0px;
 	font-weight: bold;
 	color: #FFF;
-	background-color: #700101;
+	background-color: #b3c466;
 	padding: 2%;
+  color: black;
 }
 
 .botao {
@@ -60,14 +58,14 @@ body {
 	float: left;
 	border: 0px;
 	border-bottom: 2px;
-	border-color: #1e2b34;
+	border-color: #b3c466;
 	border-style: solid;
 	padding: 4%;
+  color: black;
 }
-
 .botao:hover {
-	background-color: red;
-	color: #FFF;
+	background-color: #e1f0a1;
+	color: black;
 }
 
 a {
@@ -97,18 +95,6 @@ img {
       <div class="botao"> <img src="../img/icon_consulta.png"> Consulta </div>
     </a>
 
-
-<!-- 
-    <div class="titulo"> :: Aluno </div>
-    
-    <a href="../aluno/form_aluno.php" target="conteudo"> 
-      <div class="botao"> <img src="../img/icon_cadastro.png"> Formulário de Cadastro  </div> 
-    </a>
-    
-    <a href="../aluno/consulta_aluno.php" target="conteudo"> 
-      <div class="botao"> <img src="../img/icon_consulta.png"> Consulta </div>
-    </a> -->
-
 	<div class="titulo"> :: Slogan </div>
     
     <a href="../slogan/form_slogan.php" target="conteudo"> 
@@ -119,25 +105,16 @@ img {
       <div class="botao"> <img src="../img/icon_consulta.png"> Consulta </div>
     </a>
 
-	<!-- <div class="titulo"> :: Serviços </div>
+	<!-- <div class="titulo"> :: Informações </div>
     
-    <a href="../servicos/form_servicos.php" target="conteudo"> 
+    <a href="../informacoes/form_informacoes.php" target="conteudo"> 
       <div class="botao"> <img src="../img/icon_cadastro.png"> Formulário de Cadastro  </div> 
     </a>
     
-    <a href="../servicos/consulta_servicos.php" target="conteudo"> 
+    <a href="../informacoes/consulta_informacoes.php" target="conteudo"> 
       <div class="botao"> <img src="../img/icon_consulta.png"> Consulta </div>
-    </a> 
+    </a>  -->
 
-	<div class="titulo"> :: Projetos </div>
-    
-    <a href="../projetos/form_projetos.php" target="conteudo"> 
-      <div class="botao"> <img src="../img/icon_cadastro.png"> Formulário de Cadastro  </div> 
-    </a>
-    
-    <a href="../projetos/consulta_projetos.php" target="conteudo"> 
-      <div class="botao"> <img src="../img/icon_consulta.png"> Consulta </div>
-    </a> -->
 
 
     <div class="titulo"> :: Sair </div>

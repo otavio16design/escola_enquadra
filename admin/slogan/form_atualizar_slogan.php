@@ -2,7 +2,7 @@
 require_once('../conexao/banco.php');
 $id = $_REQUEST['slo_id'];
 
-$sql = "select * from slogan where slo_id = '$id'";
+$sql = "select * from tb_slogan where slo_id = '$id'";
 $sql = mysqli_query($con, $sql) or die ("Erro na sql!");
 $dados = mysqli_fetch_array($sql);
 ?>
